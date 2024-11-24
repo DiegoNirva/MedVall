@@ -3,6 +3,7 @@ package com.medvoll.apirest.Controller;
 import com.medvoll.apirest.Model.DatosRegistroMedico;
 import com.medvoll.apirest.Model.Medico;
 import com.medvoll.apirest.repository.MedicoRepository;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,7 +18,7 @@ public class MedicoController {
     MedicoRepository medicoRepository;
 
     @PostMapping
-    public void registrarMedico(@RequestBody DatosRegistroMedico medicos){
+    public void registrarMedico(@RequestBody @Valid DatosRegistroMedico medicos){
         medicoRepository.save(new Medico(medicos));
         System.out.println("Registro guardado correctamente");
         System.out.println(medicos);
