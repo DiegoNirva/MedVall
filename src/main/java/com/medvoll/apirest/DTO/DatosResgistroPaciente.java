@@ -1,4 +1,4 @@
-package com.medvoll.apirest.Model;
+package com.medvoll.apirest.DTO;
 
 public record DatosResgistroPaciente(
         String nombre,

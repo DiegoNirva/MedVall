@@ -1,6 +1,7 @@
-package com.medvoll.apirest.Model;
+package com.medvoll.apirest.DTO;
 
 
+import com.medvoll.apirest.Model.Especialidad;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
