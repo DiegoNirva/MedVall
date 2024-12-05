@@ -1,0 +1,5 @@
+CREATE TABLE Medicos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+        login VARCHAR(100) NOT NULL,
+        clave VARCHAR(350) NOT NULL,
+);
