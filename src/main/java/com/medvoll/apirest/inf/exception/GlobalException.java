@@ -1,4 +1,4 @@
-package com.medvoll.apirest.exception;
+package com.medvoll.apirest.inf.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;

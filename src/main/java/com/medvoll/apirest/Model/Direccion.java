@@ -1,5 +1,6 @@
 package com.medvoll.apirest.Model;
 
+import com.medvoll.apirest.DTO.DatosDireccion;
 import jakarta.persistence.Embeddable;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,5 +22,14 @@ public class Direccion {
         this.ciudad = direccion.ciudad();
         this.numero = direccion.numero();
         this.complemento = direccion.complemento();
+    }
+
+    public Direccion actualizarDatos(DatosDireccion direccion) {
+        this.calle = direccion.calle();
+        this.districto = direccion.districto();
+        this.ciudad = direccion.ciudad();
+        this.numero = direccion.numero();
+        this.complemento = direccion.complemento();
+        return this;
     }
 }

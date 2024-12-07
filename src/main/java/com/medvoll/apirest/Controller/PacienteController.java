@@ -1,6 +1,6 @@
 package com.medvoll.apirest.Controller;
 
-import com.medvoll.apirest.Model.DatosResgistroPaciente;
+import com.medvoll.apirest.DTO.DatosResgistroPaciente;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
